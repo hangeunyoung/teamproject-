@@ -1,5 +1,5 @@
 section .sub-banner {
-    width: 1920px;
+    width: 100%;
     height: 380px;
     background-image: url(../images/subpagebanner1.png);
     background-repeat: no-repeat;

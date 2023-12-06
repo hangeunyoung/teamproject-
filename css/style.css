@@ -1,23 +1,26 @@
-header {  
+header {
     width: 100%;
     height: 60px;
     color: white;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.2);
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 210px;
-
+    position: absolute;
 }
+
 header:hover {
     background-color: white;
     border-bottom: 1px solid #e7e7e7;
 }
+
 header:hover a {
     color: #000
 }
+
 header:hover .logo h1 {
-    background-image: url(../images/logo.png);
+    background-image: url(../images/header/logo.png);
 }
 
 header a {
@@ -32,7 +35,7 @@ header nav {
 }
 
 header .logo h1 {
-    background-image: url(../images/logo2.png);
+    background-image: url(../images/header/logo2.png);
     background-repeat: no-repeat;
     background-position: center;
     width: 154px;
@@ -56,24 +59,29 @@ header nav .depth1 li {
 header nav .depth1 li a {
     padding: 20.5px 47px;
 }
+
 header nav .depth1>li:hover {
     border-bottom: 2px solid #0AB481;
 }
+
 header nav .depth1 li .depth2 {
     position: absolute;
     top: 60px;
     z-index: 10;
     display: none;
 }
+
 header nav .depth1>li.show .depth2 {
     display: block;
 }
+
 /* header nav .depth1>li:hover~li .depth2 {
     display: block;
 } */
 header nav .depth1>li:hover .nav-bg {
     display: block;
 }
+
 header nav .depth1 li .depth2 {
     height: 180px;
     background-color: white;
@@ -82,6 +90,7 @@ header nav .depth1 li .depth2 {
 header nav .depth1 li .depth2 li {
     line-height: 2em;
 }
+
 header nav .depth1 li .depth2 li a:hover {
     color: #0AB481;
 }
@@ -96,15 +105,6 @@ header nav .depth1 li .depth2 li:first-child {
     padding-top: 15px;
 }
 
-header .icon img:nth-child(1) {
-    vertical-align: -10px;
-}
-
-header .icon img:nth-child(2) {
-    vertical-align: -5px;
-    padding-left: 15px;
-}
-
 header nav .nav-bg {
     width: 100vw;
     height: 180px;
@@ -113,6 +113,44 @@ header nav .nav-bg {
     top: 60px;
     left: 0;
     display: none;
+}
+
+header .icon {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+header .icon a:nth-child(1) {
+    background-image: url(../images/header/오시는길2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 86px;
+    height: 30px;
+}
+
+header:hover .icon a:nth-child(1) {
+    background-image: url(../images/header/오시는길.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 86px;
+    height: 30px;
+}
+
+header .icon a:nth-child(2) {
+    background-image: url(../images/header/EN2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 43px;
+    height: 16px;
+}
+
+header:hover .icon a:nth-child(2) {
+    background-image: url(../images/header/EN.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 43px;
+    height: 16px;
 }
 
 footer {
@@ -142,9 +180,11 @@ footer .depth1 .depth2 {
 footer .depth1 .depth2 li {
     padding-bottom: 8px;
 }
+
 footer p {
     color: #C4C4C4;
 }
+
 footer .clause {
     margin-top: 50px;
     display: flex;
@@ -154,24 +194,30 @@ footer .clause {
     margin-bottom: 24px;
     border-bottom: 1px solid #C4C4C4;
 }
+
 footer .clause div {
-    display: flex;    
+    display: flex;
     align-items: center;
 }
+
 footer .clause a {
-    padding-right: 50px; 
+    padding-right: 50px;
     font-size: 24px;
 }
-footer .clause div > p {
-    padding-right: 40px;   
+
+footer .clause div>p {
+    padding-right: 40px;
     font-size: 14px;
 }
+
 footer .clause .language>p {
     padding-right: 22px;
 }
+
 footer .address p:first-child {
     margin-top: 35px;
 }
+
 footer .address p {
     padding-bottom: 8px;
 }

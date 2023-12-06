@@ -1,0 +1,43 @@
+section .sub-banner {
+    width: 100%;
+    height: 380px;
+    background-image: url(../images/Management_Philosophy/image\ 1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "pretendard-Bold", 'Noto Sans KR', sans-serif;
+}
+
+section .sub-banner h1 {
+    font-size: 40px;
+}
+
+section .sub-nav {
+    height: 57px;
+    background-color: #ccc;
+    padding: 0 210px;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+#main-title h4 {
+    color: #0AB481;
+    font-size: 14px;
+}
+#main-title h2 {
+    padding: 10px 0 60px;
+    font-size: 36px;
+    font-family: "pretendard-Bold", 'Noto Sans KR', sans-serif;
+}
+#main-title h3 {
+    padding-left: 26px;
+    font-size: 32px;
+    font-family: "pretendard-Bold", 'Noto Sans KR', sans-serif;
+    border-left: 10px solid #589A8D;
+}

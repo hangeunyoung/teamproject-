@@ -4,10 +4,15 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
-    color: #000;
+}
+body {
     font-family: "pretendard", 'Noto Sans KR', sans-serif;
+    color: black;
 }
 
 a {
     color: inherit;
+}
+.blind {
+    display: none;
 }

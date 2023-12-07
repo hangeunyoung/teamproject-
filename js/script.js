@@ -24,6 +24,15 @@ for(let i = 0; i < depth1_li.length; i++){
     });
 }
 
+const faqs = document.querySelectorAll(".faq");
+
+faqs.forEach((faq) => {
+    faq.addEventListener("click", ()=>{
+        faq.classList.toggle("active");
+    });
+});
+
+
 let imgBox = document.querySelector('main .slider .slider-box');
 let img = document.querySelectorAll('.slider-box .title').length;
 let count = 0; 

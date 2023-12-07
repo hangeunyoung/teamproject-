@@ -19,7 +19,8 @@ header:hover a {
     color: #000
 }
 
-header:hover .logo h1 {
+header:hover .logo a {
+    display: block;
     background-image: url(../images/header/logo.png);
 }
 
@@ -34,7 +35,8 @@ header nav {
     line-height: 60px;
 }
 
-header .logo h1 {
+header .logo a {
+    display: block;
     background-image: url(../images/header/logo2.png);
     background-repeat: no-repeat;
     background-position: center;

@@ -20,7 +20,6 @@ section .sub-banner #text1{
 section .sub-nav {
     height: 57px;
     border-bottom: 2px solid rgba(0, 0, 0, 0.1);
-    margin-bottom: 120px;
 }
 
 .sub-nav-box {
@@ -110,20 +109,14 @@ section .sub-nav {
 }
 #page_news .page_news_wrap .info_list {
     border-top: 1px solid rgba(0,0,0,0.5);
-    /* margin-bottom: 110px; */
+    margin-bottom: 110px;
 }
-/* #page_news .page_news_wrap .info_list #info_list_ul {
+#page_news .page_news_wrap .info_list #info_list_ul {
     display: flex;
     flex-direction: column;
-} */
+}
 #page_news .page_news_wrap .info_list #info_list_ul li {
     border-bottom: 1px solid rgba(0,0,0,0.3);
-}
-/* #page_news .page_news_wrap .info_list #info_list_ul li .answer{
-} */
-#page_news .page_news_wrap .info_list #info_list_ul li .answer img {
-    width: 20px;
-    height: 20px;
 }
 #page_news .page_news_wrap .info_list #info_list_ul li div #info_tap_mini {
     margin-left: 20px;
@@ -133,19 +126,18 @@ section .sub-nav {
     border-radius: 50px;
     box-sizing: border-box;
 }
-#page_news .page_news_wrap .info_list #info_list_ul li div #info_tap_mini a span{
+#page_news .page_news_wrap .info_list #info_list_ul li div #info_tap_mini a{
     font-size: 12px;
     font-family: "pretendard-Medium";
-    
 }
 #page_news .page_news_wrap .info_list #info_list_ul li div .main_text_wrap{
     display: flex;
     justify-content: space-between;
-    align-items: center;
     width: 988px;
 }
 #page_news .page_news_wrap .info_list #info_list_ul li div a span.main_text{
     font-size: 18px;
+
     width: 736.35px;
     height: 21px;
 }
@@ -153,7 +145,6 @@ section .sub-nav {
     font-size: 16px;
     color: rgba(0,0,0,0.7);
     margin-right: 20px;
-    letter-spacing: -0.4;
 }
 #page_news .page_news_wrap .info_list #info_list_ul li > div {
     display: flex;
@@ -169,7 +160,6 @@ section .sub-nav {
 #page_news .page_news_wrap .more_view_btn{
 display: inline-block;
 margin-bottom: 180px;
-margin-top: 110px;
 }
 #page_news .page_news_wrap .more_view_btn a{
     font-size: 14px;
@@ -178,7 +168,4 @@ margin-top: 110px;
     border-radius: 50px;
     background-color: var(--color-point);
     color: white;
-}
-#page_news .page_news_wrap .more_view_btn.active {
-    display: none;
 }

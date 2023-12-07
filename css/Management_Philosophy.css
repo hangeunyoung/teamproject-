@@ -26,18 +26,99 @@ section .sub-nav {
     margin: 0 auto;
 }
 
-#main-title h4 {
+#sub-management>h4 {
     color: #0AB481;
     font-size: 14px;
+    padding-top: 140px;
 }
-#main-title h2 {
+
+#sub-management .sub-management-content1 h2 {
     padding: 10px 0 60px;
     font-size: 36px;
     font-family: "pretendard-Bold", 'Noto Sans KR', sans-serif;
 }
-#main-title h3 {
+
+#sub-management .sub-management-content1 h3 {
     padding-left: 26px;
+    margin-bottom: 50px;
     font-size: 32px;
     font-family: "pretendard-Bold", 'Noto Sans KR', sans-serif;
     border-left: 10px solid #589A8D;
+}
+
+.sub-management-content1 .sub-management-img {
+    padding-top: 133px;
+    margin-bottom: 180px;
+    width: 1200px;
+    height: 747px;
+    background-image: url(../images/main/Group123.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sub-management-text {
+    display: flex;
+}
+#sub-management .sub-management-content2 h3 {
+    padding-left: 26px;
+    margin-bottom: 50px;
+    font-size: 32px;
+    font-family: "pretendard-Bold", 'Noto Sans KR', sans-serif;
+    border-left: 10px solid #589A8D;
+}
+
+#sub-management .sub-management-content2 .card {
+    width: 387px;
+    height: 334px;
+    border: 1px solid #d9d9d9;
+    border-radius: 60px;
+}
+
+#sub-management .sub-management-content2 .card h2 {
+    text-align: center;
+    font-size: 24px;
+    font-family: "pretendard-SemiBold", 'Noto Sans KR', sans-serif;
+    padding-top: 40px;
+}
+
+#sub-management .sub-management-content2 .card>h4 {
+    text-align: center;
+    font-size: 16px;
+    font-family: "pretendard-Regular", 'Noto Sans KR', sans-serif;
+    padding-bottom: 40px;
+    width: 293px;
+    margin-left: 47px;
+    border-bottom: 1px solid #d9d9d9;
+}
+
+#sub-management .sub-management-content2 .card-box {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+#sub-management .sub-management-content2{
+    position: relative;
+}
+/* 플랙스 2줄배치 박스 하나로 묶어서 하기 */
+/* 두번째 카드를 기준으로 이미지를 엡솔루트 해야하는데 지정이 어려움 */
+#sub-management .sub-management-content2 .card-box:nth-of-type(1) {
+    padding: 100px 0 30px;
+}
+
+#sub-management .sub-management-content2 .card-box:nth-of-type(2) {
+    padding-bottom: 180px;
+}
+
+#sub-management .sub-management-content2 .card p {
+    padding-left: 57px;
+    font-size: 18px;
+}
+
+#sub-management .sub-management-content2 .card p:nth-of-type(1) {
+    padding: 28px 57px 15px;
+}
+#sub-management .sub-management-content2 img {
+    position: absolute;
+    top: 94px;
+    right: 220px;
 }

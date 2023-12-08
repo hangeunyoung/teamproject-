@@ -121,15 +121,19 @@ header nav .nav-bg {
 header .icon {
     display: flex;
     align-items: center;
-    gap: 15px;
+    /* gap: 10px; */
 }
+
+
 
 header .icon a:nth-child(1) {
     background-image: url(../images/header/오시는길2.png);
     background-repeat: no-repeat;
     background-position: center;
+    margin-right: 15px;
     width: 86px;
     height: 30px;
+
 }
 
 header:hover .icon a:nth-child(1) {
@@ -147,6 +151,43 @@ header .icon a:nth-child(2) {
     width: 43px;
     height: 16px;
 }
+/* 재관 */
+#rmsduddlgud1 {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+
+    font-family: "Noto Sansf KR", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    /* line-height: 20px; */
+
+    color: #fff;
+    /* background-color: #fff; */
+
+    background-color: transparent;
+    border: none;
+    /* text-align: center; */
+    margin-bottom: 5px;
+    /* vertical-align: top; */
+    cursor: pointer;
+}
+
+header:hover .icon #rmsduddlgud1 {
+    color: #000;
+}
+
+
+
+
+select:focus {
+    /* border-color: #aaa; */
+    /* box-shadow: 0 0 1px 3px rgba(59, 153, 252, .7); */
+    box-shadow: 0 0 0 3px -moz-mac-focusring;
+    color: #0AB481;
+    outline: none;
+  }
+/* 11111111111111111111 */
 
 header:hover .icon a:nth-child(2) {
     background-image: url(../images/header/EN.png);
@@ -155,6 +196,12 @@ header:hover .icon a:nth-child(2) {
     width: 43px;
     height: 16px;
 }
+
+.tndussnsk {
+    width: 10px;
+    margin-right: 50px;
+}
+
 
 footer {
     width: 100vw;
@@ -216,6 +263,32 @@ footer .clause div>p {
 footer .clause .language>p {
     padding-right: 22px;
 }
+/* 푸터 재관 */
+#rmsduddlgud2 {
+    /* -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none; */
+
+
+    font-family: "Noto Sansf KR", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    /* line-height: 20px; */
+
+    color: #818181;
+    /* background-color: #fff; */
+
+    background-color: #F1F1F1;
+    border: none;
+    /* text-align: center; */
+    
+    margin-bottom: 5px;
+    /* vertical-align: top; */
+    /* border: 1px solid red; */
+    padding: 11px 55px 10px 15px ;
+    cursor: pointer;
+}
+/* 재관 111111111111111111111111111111111111111111111 */
 
 footer .address p:first-child {
     margin-top: 35px;

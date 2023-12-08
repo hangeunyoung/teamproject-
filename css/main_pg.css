@@ -20,8 +20,6 @@ main .slider .slider-box {
     transition: all 1s;
 }
 
-
-
 main .main-banner .title {
     background-image: url(../images/main-banner/main-banner1.png);
     background-repeat: no-repeat;
@@ -84,6 +82,7 @@ main .main-banner .next-btn {
     font-family: "pretendard-SemiBold", 'Noto Sans KR', sans-serif;
     font-size: 30px;
     padding: 120px 0 69px;
+    text-align: center;
 }
 
 #history .history-item {
@@ -232,6 +231,7 @@ main .main-banner .next-btn {
     height: 400px;
     font-family: "pretendard-Medium", 'Noto Sans KR', sans-serif;
     font-size: 20px;
+    color: white;
 }
 
 #notice .notice-box .notice-text h2 {

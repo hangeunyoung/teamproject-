@@ -8,6 +8,7 @@ header {
     align-items: center;
     padding: 0 210px;
     position: absolute;
+    z-index: 50;
 }
 
 header:hover {

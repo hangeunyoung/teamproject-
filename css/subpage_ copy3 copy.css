@@ -4,7 +4,7 @@
     --color-point : #0ab481;
 }
 section .sub-banner {
-    width: 1920px;
+    width: 100%;
     height: 380px;
     background-image: url(../images/sub/bg_img.svg);
     background-repeat: no-repeat;

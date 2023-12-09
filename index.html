@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/main_pg.css">
+    <script src="js/counter.js"></script>
 </head>
 
 <body>
@@ -90,26 +91,29 @@
             <a href="#" class="next-btn"><img src="images/main-banner/main_next_btn.png" alt="main_next_btn"></a>
         </div>
     </main>
-    <section id="history" class="container">
+    <section id="count" class="history container">
         <h3>창의적인 발상과 차별화된 전략으로 시장을 선도하는 신영자산운용</h3>
         <div>
-            <div class="history-item">
-                <img src="images/main/e8f62128f77604382402671040d83289 1.png" alt="총 운용자산">
-                <p>총 운용자산 (AUM)</p>
-                <p><span>75.0</span>조</p>
-            </div>
-            <div class="history-item">
-                <img src="images/main/main_man_icon 1.png" alt="총 운용자산">
-                <p>투자 및 자산관리 인력</p>
-                <p><span>320+</span>명</p>
-            </div>
-            <div class="history-item">
-                <img src="images/main/f42983f691338e6339a0aac729faa916 1.png" alt="총 운용자산">
-                <p>함께하는 기관 투자자 수</p>
-                <p><span>250+</span>명</p>
+            <div class="count-container">
+                <div class="history-item">
+                    <img src="images/main/e8f62128f77604382402671040d83289 1.png" alt="총 운용자산">
+                    <p>총 운용자산 (AUM)</p>
+                    <p><span class="count" data-num="75" data-speed="1.3">0</span><span>.0</span>조</p>
+                </div>
+                <div class="history-item">
+                    <img src="images/main/main_man_icon 1.png" alt="총 운용자산">
+                    <p>투자 및 자산관리 인력</p>
+                    <p><span class="count" data-num="320" data-speed="0.7">0</span><span>+</span>명</p>
+                </div>
+                <div class="history-item">
+                    <img src="images/main/f42983f691338e6339a0aac729faa916 1.png" alt="총 운용자산">
+                    <p>함께하는 기관 투자자 수</p>
+                    <p><span class="count" data-num="250" data-speed="0.5">0</span><span>+</span>명</p>
+                </div>
             </div>
         </div>
     </section>
+    
     <div id="sub-banner">
         <div>
             <h2>
@@ -246,6 +250,13 @@
             <p>COPYRIGHT 2009 SHINYOUNG ASSET MANAGEMENT. ALL RIGHTS RESERVED</p>
         </div>
     </footer>
+    <script>
+        // 설정 옵션: el - 요소명, offset - 카운트 시작 위치 조절
+        playCount({
+          el: '.count',
+          offset: 300
+        })
+      </script>
 </body>
 
 </html>

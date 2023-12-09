@@ -188,6 +188,21 @@ select:focus {
     outline: none;
   }
 /* 11111111111111111111 */
+header .icon {
+    position: relative;
+}
+header .icon .arrow {
+    position: absolute;
+    right: 0;
+    width: 12px;
+    height: 12px;
+    background-image: url(../images/header/iconamoon_arrow-up-2-fill\ \(1\).png);
+}
+header:hover .icon .arrow {
+    width: 12px;
+    height: 12px;
+    background-image: url(../images/header/iconamoon_arrow-up-2-fill.png);
+}
 
 header:hover .icon a:nth-child(2) {
     background-image: url(../images/header/EN.png);

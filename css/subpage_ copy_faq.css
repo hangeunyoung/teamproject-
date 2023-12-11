@@ -97,11 +97,7 @@ section .sub-nav {
 #page_news .page_news_wrap nav #news_tap_ul li a{
     padding:10px 78px;
 }
-#page_news .page_news_wrap nav #news_tap_ul li:hover {
-    background-color: var(--color-point);
-    transition: background-color 0.4s;
-    
-}
+
 #page_news .page_news_wrap nav #news_tap_ul li#first_li {
     color: white;
     font-family:'pretendard-Bold';
@@ -109,9 +105,7 @@ section .sub-nav {
     background-color: var(--color-point);
 }
 #page_news .page_news_wrap nav #news_tap_ul li:hover {
-    background-color: var(--color-point);
-    color: white;
-    font-family:'pretendard-Bold';
+    color: var(--color-point);    
 }
 #page_news .page_news_wrap #list_total {
     padding: 10px 0;
@@ -151,14 +145,14 @@ section .sub-nav {
 #page_news .page_news_wrap .info_list #info_list_ul li .faq .answer {
     overflow: hidden;
     max-height: 0;
-    transition: max-height 1.8s ease-in-out;
+    transition: max-height 0.4s ease-in-out;
     padding-left: 164px;
     padding-top: 20px;
 }
 #page_news .page_news_wrap .info_list #info_list_ul li .faq.active .answer{
     max-height: 350px;
     animation: fade 0.2s ease;
-    transition: max-height 1.8s ease-in-out;
+    transition: 0.4s ease-in-out;
     padding-top: 20px;
 }
 #page_news .page_news_wrap .info_list #info_list_ul li .faq.active .answer #displaynone {

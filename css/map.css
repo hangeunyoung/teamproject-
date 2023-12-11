@@ -52,8 +52,6 @@ section .sub-nav {
 }
 .container h4, h2 {
     animation: fade-out 1s ease-in-out;
-    transition: transform 3s;
-    overflow: hidden;
 }
 .container h4 {
     margin-top: 120px;

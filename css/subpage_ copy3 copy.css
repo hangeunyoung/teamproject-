@@ -54,7 +54,7 @@ section .sub-nav {
     margin: 0 auto;
 }
 #page_news .page_news_wrap .news_top_text {
-    animation: fade-out 3s ease-in-out;
+    animation: fade-out 1s ease-in-out;
 }
 #page_news .page_news_wrap .news_top_text h5{
     color: var(--color-point);

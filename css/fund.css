@@ -60,6 +60,7 @@ section .sub-nav {
 #Fund_page .title-name {
     padding-top: 120px;
     padding-bottom: 60px;
+    animation: fade-out 1s ease-in-out;
 }
 
 #Fund_page .title-name h3 {
@@ -552,3 +553,23 @@ main section {
 
     
 }
+
+@keyframes fade {
+    from{
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+
+  @keyframes fade-out {
+    from{opacity: 0;
+        transform: translateY(20px);
+      }
+      to {opacity: 1;
+        transform: translateY(0px);
+      }
+  }

@@ -56,12 +56,17 @@ section .sub-nav {
     font-size: 16px;
     padding-top: 140px;
     font-weight: 400;
+    animation: fade-out 1s ease-in-out;
 }
+/* 컨테이너에 타이틀 움직임 조정 */
 
 #sub-management .sub-management-content1 h2 {
     padding: 10px 0 60px;
     font-size: 36px;
     font-family: "pretendard-Bold", 'Noto Sans KR', sans-serif;
+    animation: fade-out 1s ease-in-out;
+    transition: transform 3s;
+    overflow: hidden;
 }
 
 #sub-management .sub-management-content1 h3 {
@@ -116,6 +121,17 @@ section .sub-nav {
     margin-left: 47px;
     border-bottom: 1px solid #d9d9d9;
 }
+#sub-management .sub-management-content2 .card p{
+    padding-left: 2px;
+
+}
+#sub-management .sub-management-content2 .card p::before {
+    content: '\●';
+    font-size: 5px;
+    vertical-align: middle;
+}
+/* 기존 문자보다는 pseudo el 이나 아이콘사용 추천
+텍스트랑 얽혀있어서 변경 */
 
 #sub-management .sub-management-content2 .card-box {
     display: flex;
@@ -148,3 +164,23 @@ section .sub-nav {
     top: 94px;
     right: 220px;
 }
+
+@keyframes fade {
+    from{
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+
+  @keyframes fade-out {
+    from{opacity: 0;
+        transform: translateY(20px);
+      }
+      to {opacity: 1;
+        transform: translateY(0px);
+      }
+  }

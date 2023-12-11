@@ -73,8 +73,6 @@ main .main-banner .next-btn {
     right: 60px;
 }
 
-
-
 .history {
     height: 630px;
 }
@@ -135,49 +133,80 @@ main .main-banner .next-btn {
     background-size: cover;
     padding: 0 360px;
     color: white;
+    display: flex;
+    gap: 18px;
 }
 
 #sub-banner h2 {
-    padding-top: 73px;
     font-size: 36px;
+    margin-bottom: 35px;
     font-family: "pretendard-SemiBold", 'Noto Sans KR', sans-serif;
 }
 
 #sub-banner p {
-    padding: 35px 0 30px;
+    margin-bottom: 30px;
     font-size: 18px;
-    line-height: 1.8em;
     font-family: "pretendard-Medium", 'Noto Sans KR', sans-serif;
 }
 
-#sub-banner {
+#sub-banner .sub-banner_items_wrap {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    overflow: hidden;
+    justify-content: center;
 }
 
-#sub-banner button {
+#sub-banner .sub-banner_items_wrap button {
     width: 130px;
     height: 45px;
     border-radius: 26px;
+    padding: 4px;
     border: none;
-    font-size: 14px;
-    font-family: "pretendard-Bold", 'Noto Sans KR', sans-serif;
     background-color: #0AB481;
     color: white;
+}
+
+#sub-banner .sub-banner_items_wrap button a {
+    font-size: 14px;
+    font-weight: 500;
 }
 
 #sub-banner img {
     width: 497;
     height: 263px;
-    margin-top: 78px;
+}
+
+#sub-banner .sub-banner_img_wrap {
+    display: flex;
+    align-items: center;
 }
 
 #news {
-    height: 771px;
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+
+#news .news_title {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    margin-bottom: 35px;
+}
+#news .news_title h1 {
+    animation: fade-out 1s ease-in-out;
+}
+
+#news .news_title button {
+    width: 100px;
+    height: 35px;
+    border: none;
+    background: #0AB481;
+    border-radius: 26px;
+    color: white;
+    font-weight: 600;
 }
 
 #news h1 {
-    padding: 120px 0 35px;
     font-family: "pretendard-Bold", 'Noto Sans KR', sans-serif;
     font-size: 40px;
 }
@@ -202,7 +231,7 @@ main .main-banner .next-btn {
 
 #news .news-date p:nth-child(1) {
     font-size: 34px;
-    font-family: "pretendard-SemiBold", 'Noto Sans KR', sans-serif;
+    font-weight: 600;
 }
 
 #news .news-date p:nth-child(2) {
@@ -231,12 +260,12 @@ main .main-banner .next-btn {
     width: 700px;
     height: 400px;
     font-family: "pretendard-Medium", 'Noto Sans KR', sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     color: white;
 }
 
 #notice .notice-box .notice-text h2 {
-    font-family: "pretendard-SemiBold", 'Noto Sans KR', sans-serif;
+    font-weight: 600;
     font-size: 36px;
 }
 
@@ -259,4 +288,16 @@ main .main-banner .next-btn {
 #notice .notice-box .notice-text p {
     padding-top: 30.5px;
     line-height: 1.8em;
+}
+
+@keyframes fade-out {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
 }

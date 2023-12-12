@@ -48,10 +48,20 @@ main .main-banner h2 {
 }
 
 main .main-banner h2 span {
-    font-size: 34px;
+    font-size: 36px;
     color: #0AB481;
+    position: relative;
+    top: 10px;
+    display: inline-block;
+    animation: bounce .47s ease infinite alternate;
 }
 
+@keyframes bounce {
+    100% {
+      top: -10px;      
+    }
+  }
+  
 main .main-banner a {
     padding: 10px;
 }
